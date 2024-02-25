@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-top: 150px;
+            text-align: center;
+        }
+        button{
+            font-size: 30px;
+            text-align: center;
+            width: 350px;
+            height: 100px;
+            margin-bottom: 20px; 
+        }
+        button#myButton {
+            margin-l: 20px; 
+        }
+        input[type="Number"] {
+            width: 170px;
+            margin-top: 50px;
+            font-size: xx-large;
+        }
+        p#result {
+            margin-top: 20px;
+            font-size: 80px;
+            text-align: center; 
+        }
+    </style>
+</head>
+<body>
+     <button id="myButton">Click Me It's Change Color</button>
+     <button id="greetingButton">Click Me Its Send Greeting Message</button>
+     <br>
+     <br>
+     <br>
+     <input type="number" id="number1" placeholder="Enter first number">
+     <input type="number" id="number2" placeholder="Enter second number">
+     <br> 
+     <button id="add">Add</button>
+     <p id="result">Result: </p>
+
+</body>
+
+
+<script>
+    const myButton = document.getElementById('myButton');
+
+    myButton.addEventListener('click', function() {
+        if (myButton.style.backgroundColor === 'blue') {
+            myButton.style.backgroundColor = ''; 
+        } else {
+            myButton.style.backgroundColor = 'blue';
+        }
+    });
+    const greetingButton = document.getElementById('greetingButton');
+
+        greetingButton.addEventListener('click', function() {
+            const currentHour = new Date().getHours();
+            let greetingMessage;
+        
+            if (currentHour >= 0 && currentHour < 12) {
+                greetingMessage = 'Good morning!';
+            } else if (currentHour >= 12 && currentHour < 18) {
+                greetingMessage = 'Good afternoon!';
+            } else {
+                greetingMessage = 'Good evening!';
+            }
+        
+            alert(greetingMessage);
+        });
+        document.getElementById('add').addEventListener('click', function() {
+        const number1 = parseFloat(document.getElementById('number1').value);
+        const number2 = parseFloat(document.getElementById('number2').value);
+    
+        if (isNaN(number1) || isNaN(number2)) {
+            alert('Please enter valid numbers');
+            return;
+        }
+    
+        const sum = number1 + number2;
+    
+        document.getElementById('result').innerText = `Result: ${sum}`;
+    });
+</script>
+</html>

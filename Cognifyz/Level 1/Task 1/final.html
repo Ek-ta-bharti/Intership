@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Task 1</title>
+    <style>
+        header {
+            background-color: #7fb0e0;
+            padding: 10px;
+            text-align: center;
+            font-size: large;
+            display: block;
+        }
+
+        nav {
+            text-decoration: none;
+            background-color: #1861aa;
+            padding: 10px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 250px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #e9e3e3;
+            font-size: xx-large;
+            text-align: center;
+        }
+
+        .image-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start; 
+            margin-top: 90px;
+        }
+
+        img {
+            max-width: 60%;
+            height: auto; 
+        }
+
+        .paragraph-section {
+            text-align: right;
+            font-size: 40px;
+            display: inline-block; 
+            width: 30%; 
+            margin-right: 100px;
+        }
+        p{
+            margin-right: 110px;
+        }
+
+        form {
+            margin-top: 20px; 
+            text-align: end;
+            margin-right: 200px;
+        }
+
+    label {
+    display: inline-block; 
+    width: 300px; 
+    font-size: 80px;
+    text-align: right;
+    vertical-align: top; 
+    margin-right: 20px; 
+}
+
+input[type="text"] {
+    width: 300px;
+    font-size: 80px;
+    vertical-align: top; 
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    font-size: 40px;
+    width: 300px; 
+}
+
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to My Webpage</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Setting</a></li>
+    </ul>
+</nav>
+<div class="image-section">
+    <img src="which-development.jpg" alt="Web Development image">
+    <div class="paragraph-section">
+        <p>This is my paragraph section.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

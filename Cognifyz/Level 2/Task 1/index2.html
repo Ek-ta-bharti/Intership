@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Grid Layout</title>
+  <!-- Link Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+  body {
+    font-family: Arial, sans-serif; 
+    background-color: #93bbea; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .container {
+    text-align: center;
+    font: bold ;
+    border: 1px solid #070707;
+    padding: 30px;
+    background-color: #2fb7d2;
+    box-shadow: 1px 2px 9px 7px #0686c6;
+    width: 80%;
+    max-width: 700px; /* Adjust max-width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+    .row {
+      margin-bottom: 20px;
+      
+    }
+    .col, .col-8, .col-4, .col-md-4, .offset-md-4, .col-md-3, .offset-md-3, .col-md-6 {
+    margin-bottom: 10px;
+    }
+    
+    .col, .col-8, .col-4, .col-md-4, .col-md-3, .col-md-6 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+    .col {
+      background-color: #1086c2;
+      border: 1px solid #171616;
+      padding: 10px;
+      text-align: center;
+    }    
+    .col-8, .col-4 {
+      background-color: #1086c2;
+      border: 1px solid #070707;
+      padding: 10px;
+      text-align: center;
+    }
+    .col-md-4 {
+      background-color: #1086c2;
+      border: 1px solid #121111;
+      padding: 10px;
+      text-align: center;
+    }
+    .offset-md-4 {
+      background-color: #1086c2;
+      border: 1px solid #181717;
+      padding: 10px;
+      text-align: center;
+    }
+    .col-md-3 {
+      background-color: #1086c2;
+      border: 1px solid #0f0e0e;
+      padding: 10px;
+      text-align: center;
+    }
+    .offset-md-3 {
+      margin-left: 25%; 
+      background-color: #1086c2;
+      padding: 10px;
+      border: 1px solid #161515;
+      text-align: center;
+    }
+    .col-md-6 {
+      background-color: #1086c2;
+      border: 1px solid #000000;
+      padding: 10px;
+      text-align: center;
+    }
+    .offset-md-3 {
+      margin-left: 25%;
+    }
+    .container .h3{
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h3> Responsive Grid </h3>
+    <div class="row">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+      <div class="col">4</div>
+    </div>
+    <div class="row">
+      <div class="col-8">5</div>
+      <div class="col-4">6</div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">7</div>
+      <div class="col-md-4 offset-md-4">8</div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 ">9</div>
+      <div class="col-md-3 offset-md-3">10</div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 offset-md-3">11</div>
+    </div>
+  </div>
+</body>
+</html>

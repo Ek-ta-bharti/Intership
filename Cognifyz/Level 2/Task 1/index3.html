@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Card with Bulma</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <style>
+    .section {
+  margin-bottom: 1px; /* Decrease the bottom margin */
+  /* margin-top: 0px; */
+}
+
+.container{
+      margin-top: 45px;
+      padding: 20px 20px;
+      /* background-color: #2a5a77; */
+      box-shadow: 2px 2px 7px 12px #1cbbdb;
+      border: 1px solid #086e83;
+      margin-bottom: 1px;
+      
+    }
+  .card {
+      margin-bottom: 10px;
+      box-shadow: 1px 2px 9px 7px rgba(12, 98, 130, 0.3); 
+      background-color: rgb(232, 236, 255);
+      border: 2px solid #086e83;
+    }
+  
+    .card-image img {
+      border: 4px solid #086e83;
+      box-shadow: 2px 2px 7px 7px rgba(183, 210, 220, 0.3)
+    }
+  
+    .card-footer-item a {
+      box-shadow: 2px 2px 7px 12px rgba(12, 90, 121, 0.3);
+    }
+  
+    .has-text-black {
+      font-size: 25px;
+    }
+  
+    .card-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%; 
+    }
+  
+    .content {
+      text-align: center; 
+    }
+  
+    .content a {
+      display: inline-block; 
+    }
+  
+    .content a h2 {
+      margin: 0; 
+    }
+  
+    .container{
+      margin-top: 45px;
+      padding: 20px 20px;
+      /* background-color: #2a5a77; */
+      box-shadow: 2px 2px 7px 12px #1cbbdb;
+      border: 1px solid #086e83;
+      margin-bottom: 1px;
+      
+    }
+  
+    .row {
+      text-align: center;
+      margin-top: 1px;
+      margin-bottom: 1px;
+      white-space: nowrap; /* Prevents wrapping */
+      overflow-x: auto; /* Enables horizontal scrolling */
+      -webkit-overflow-scrolling: touch;
+ /* Enables smooth scrolling on iOS */
+    }
+  
+    .col {
+      display: inline-block; /* Display columns in a single line */
+      background-color: #1cbbdb;
+      box-shadow: 2px 2px 7px 7px rgba(5, 119, 160, 0.3);
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+      border: 1px solid #086e83;
+      white-space: normal; /* Reset white-space */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col">Web Development</div>
+      <div class="col">Full Stack Development</div>
+      <div class="col">Mobile App Development</div>
+      <div class="col">Flutter</div>
+      <div class="col">Fornt End Development</div>
+      <div class="col">UI/UX Design</div>
+    </div>
+  </div>
+<section class="section">
+  <div class="container">
+    <div class="columns is-multiline">
+      <!-- Card 1 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://cognifyz.com/wp-content/uploads/2022/03/fdfdsghds.png" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <a href="" class="has-text-black"><h2 class="title is-4">Web Development</h2></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://cognifyz.com/wp-content/uploads/2022/03/hand-drawn-flat-design-api-illustration_23-2149365021.avif" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <a href="" class="has-text-black"><h2 class="title is-4">Full Stack Development</h2></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://cognifyz.com/wp-content/uploads/2022/03/app-development-concept-illustration_114360-5164.avif" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <a href="" class="has-text-black"><h2 class="title is-4">Mobile App Development</h2></a>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- Card 4 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://cognifyz.com/wp-content/uploads/2023/12/source-code-concept-illustration_114360-5487.avif" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <a href="" class="has-text-black"><h2 class="title is-4">Flutter</h2></a>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- Card 5 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://cognifyz.com/wp-content/uploads/2022/06/programming-concept-illustration_114360-1351.avif" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <a href="" class="has-text-black"><h2 class="title is-4">Fornt End Development</h2></a>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- Card 6 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://cognifyz.com/wp-content/uploads/2022/06/ui-ux-differences-concept-illustration_114360-10979.avif" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <a href="" class="has-text-black"><h2 class="title is-4">UI/UX Design</h2></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+</body>
+
+</html>

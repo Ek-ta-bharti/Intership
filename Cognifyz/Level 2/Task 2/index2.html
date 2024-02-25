@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Navigation Menu</title>
+<style>
+  
+  nav {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    justify-content: space-between; 
+    text-align: center;
+    box-shadow: 0px 1px 10px 6px #3c8beb;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: 30px;
+  }
+
+  nav li {
+    margin-left: 20px; 
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  @media screen and (max-width: 600px) {
+    nav ul {
+      flex-direction: column; 
+      display: none; 
+    }
+
+    nav ul.active {
+      display: flex; 
+    }
+
+    nav .hamburger-menu {
+      display: block;
+    }
+  }
+
+
+  .hamburger-menu {
+    display: none;
+    cursor: pointer;
+  }
+
+  .hamburger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+  }
+</style>
+</head>
+<body>
+<nav>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+</nav>
+
+<script>
+
+  function toggleMenu() {
+    var navUl = document.querySelector('nav ul');
+    navUl.classList.toggle('active'); 
+
+    var nav = document.querySelector('nav');
+    nav.classList.toggle('vertical-layout'); 
+  }
+</script>
+</body>
+</html>

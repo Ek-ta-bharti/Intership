@@ -1,0 +1,47 @@
+<!-- Extra  -->
+<!-- Create an alert box that displays a
+greeting message based on the current
+time using JavaScrip -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Message Based on Time</title>
+    <style>
+        button {
+            font-size: xxx-large;
+            margin-left: 40%;
+            margin-top: 2%;
+            transition: background-color 0.3s; 
+        }
+        p {
+            font-size: xx-large;
+            text-align: center;
+            margin-top: 3%;
+        }
+    </style>
+</head>
+<body>
+    <button id="greetingButton">Click me</button>
+    <script>  
+     const greetingButton = document.getElementById('greetingButton');
+
+        greetingButton.addEventListener('click', function() {
+            const currentHour = new Date().getHours();
+            let greetingMessage;
+        
+            if (currentHour >= 0 && currentHour < 12) {
+                greetingMessage = 'Good morning!';
+            } else if (currentHour >= 12 && currentHour < 18) {
+                greetingMessage = 'Good afternoon!';
+            } else {
+                greetingMessage = 'Good evening!';
+            }
+        
+            alert(greetingMessage);
+        });
+    </script>
+</body>
+</html>
