@@ -10,7 +10,6 @@ when clicked.
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Image Gallery</title>
 <style>
-  /* Styles for the image gallery */
   .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -19,10 +18,13 @@ when clicked.
   }
 
   .thumbnail {
-    width: 150px;
-    margin: 10px;
+    padding: 0px;
+    width: 450px;
+    margin: 50px;
     cursor: pointer;
     transition: transform 0.3s ease;
+    filter: drop-shadow(5px 5px 10px #555); 
+    box-shadow: 5px 5px 10px #555 ;
   }
 
   .thumbnail:hover {
@@ -54,10 +56,13 @@ when clicked.
 <body>
 
 <div class="gallery">
-  <img class="thumbnail" src="https://via.placeholder.com/150" alt="Thumbnail 1" onclick="showImage('https://via.placeholder.com/600')">
-  <img class="thumbnail" src="https://via.placeholder.com/150" alt="Thumbnail 2" onclick="showImage('https://via.placeholder.com/601')">
-  <img class="thumbnail" src="https://via.placeholder.com/150" alt="Thumbnail 3" onclick="showImage('https://via.placeholder.com/602')">
-  <!-- Add more thumbnails as needed -->
+  <img class="thumbnail" src="https://cognifyz.com/wp-content/uploads/2023/12/colourful-illustration-programmer-working_23-2148281410.avif" alt="Thumbnail 1" onclick="showImage('https://cognifyz.com/wp-content/uploads/2023/12/programmer-coder-concentrated-working-project-developing-programming-coding-technologies_569013-338.avif')">
+  <img class="thumbnail" src="https://cognifyz.com/wp-content/uploads/2023/12/programmer-engineering-development-coding-web-development-website-design-developer-vector_199064-126.avif" alt="Thumbnail 2" onclick="showImage('https://cognifyz.com/wp-content/uploads/2023/12/user-interface-development-isometric-concept-with-young-woman-creating-custom-design-mobile-application-vector-illustration_1284-72341.avif')">
+  <img class="thumbnail" src="https://cognifyz.com/wp-content/uploads/2023/12/programmer-concept-illustration_114360-2417.avif" alt="Thumbnail 3" onclick="showImage('https://cognifyz.com/wp-content/uploads/2023/12/user-interface-development-isometric-concept-with-young-woman-creating-custom-design-mobile-application-vector-illustration_1284-72341.avif')">
+
+  <img class="thumbnail" src="https://cognifyz.com/wp-content/uploads/2023/12/iot-internet-things-devices-connectivity-concepts-network-flat-style-with-people_194782-1655.avif" alt="Thumbnail 1" onclick="showImage('https://cognifyz.com/wp-content/uploads/2023/12/printed-circuit-board-concept-illustration_114360-5153.jpg')">
+  <img class="thumbnail" src="https://cognifyz.com/wp-content/uploads/2023/12/product-quality-concept-illustration_114360-7581.avif" alt="Thumbnail 2" onclick="showImage('https://cognifyz.com/wp-content/uploads/2023/12/product-quality-concept-illustration_114360-7581.avif')">
+  <img class="thumbnail" src="https://cognifyz.com/wp-content/uploads/2023/12/flat-design-illustration-customer-support_23-2148887720.avif" alt="Thumbnail 3" onclick="showImage('https://cognifyz.com/wp-content/uploads/2023/12/design-inspiration-concept-illustration_114360-4191.avif')">
 </div>
 
 <div class="enlarged-image" onclick="hideImage()">

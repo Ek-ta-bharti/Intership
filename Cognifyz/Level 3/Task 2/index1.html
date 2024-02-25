@@ -1,95 +1,276 @@
-<!-- Create a landing page for a web developer internship
-with the following key elements: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognifyz Technologies Internship</title>
+    <style>
+      /* Your existing CSS styles */
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #000000; /* Background color changed to black */
+          color: #fff; /* Text color changed to white */
+          display: flex;
+          justify-content: center;
+          align-items: flex-start; /* Align items to the top */
+          height: 100vh;
+      }
 
-Clear headline: "Web Developer Internship
-Opportunities at Cognifyz Technologies"
-Brief introduction: Overview of the internship
-program and duration.
-Highlights: Benefits of the internship, such as realworld experience and mentorship.
-Qualifications: Desired skills and technologies.
-Call-to-action (CTA) button: "Apply Now" or "Learn
-More.
-"
-Contact information: Footer with relevant contact
-details for inquiries.
- -->
+      .section {
+          width: 100%;
+          background-color: black; /* Background color for the full row */
+          box-shadow: 0px 3px 5px rgba(0,0,0,0.3); /* Shadow for the navbar */
+          padding-bottom: 30px; /* Added padding at the bottom */
+      }
 
- <!DOCTYPE html>
- <html lang="en">
- <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Web Developer Internship Opportunities at Cognifyz Technologies</title>
-   <style>
-     body {
-       font-family: Arial, sans-serif;
-       margin: 0;
-       padding: 0;
-     }
-     header {
-       background-color: #007bff;
-       color: #fff;
-       padding: 20px;
-       text-align: center;
-     }
-     .container {
-       max-width: 800px;
-       margin: 20px auto;
-       padding: 0 20px;
-     }
-     h1 {
-       margin-top: 0;
-     }
-     .highlight {
-       margin-bottom: 20px;
-     }
-     footer {
-       background-color: #f5f5f5;
-       text-align: center;
-       padding: 20px;
-       position: fixed;
-       bottom: 0;
-       width: 100%;
-     }
-   </style>
- </head>
- <body>
-   <header>
-     <h1>Web Developer Internship Opportunities at Cognifyz Technologies</h1>
-   </header>
-   <div class="container">
-     <p><strong>Brief Introduction:</strong> Join us at Cognifyz Technologies for an exciting opportunity to kickstart your career as a web developer. Our internship program offers hands-on experience, mentorship from industry experts, and the chance to work on real-world projects. This internship is a valuable stepping stone towards becoming a proficient web developer.</p>
-     
-     <div class="highlight">
-       <h2>Highlights:</h2>
-       <ul>
-         <li>Gain practical experience in web development.</li>
-         <li>Work closely with experienced mentors who will guide you throughout the internship.</li>
-         <li>Collaborate on real projects that have a tangible impact.</li>
-         <li>Opportunity to learn and grow in a dynamic and supportive environment.</li>
-       </ul>
-     </div>
- 
-     <div class="qualifications">
-       <h2>Qualifications:</h2>
-       <ul>
-         <li>Proficiency in HTML, CSS, and JavaScript.</li>
-         <li>Familiarity with front-end frameworks such as React or Angular.</li>
-         <li>Basic understanding of back-end development and databases.</li>
-         <li>Strong problem-solving skills and attention to detail.</li>
-         <li>Ability to work independently and in a team environment.</li>
-       </ul>
-     </div>
- 
-     <a href="#" class="cta-btn">Apply Now</a>
-   </div>
- 
-   <footer>
-     <p>Contact us at: <br>
-     Email: info@cognifyztech.com <br>
-     Phone: +1 (555) 123-4567</p>
-   </footer>
- </body>
- </html>
- 
- 
+      nav {
+          display: flex;
+          justify-content: center;
+          margin-top: 30px; 
+          margin-bottom: 30px;/* Increased margin-bottom for spacing */
+      }
+
+      .menu-toggle {
+          display: none;
+          flex-direction: column;
+          cursor: pointer;
+          padding: 10px;
+      }
+
+      .menu-toggle .bar {
+          width: 35px;
+          height: 4px;
+          background-color: white;
+          margin: 3px 0;
+          transition: 0.4s;
+      }
+
+      .menu {
+          list-style-type: none;
+          padding: 20px;
+          margin: 0;
+          display: flex;
+          flex-direction: row;
+      }
+
+      .menu li {
+          display: inline;
+          margin-right: 70px; /* Adjusted margin-right for spacing */
+          font-size: 20px; /* Reduced font-size */
+          background-color: rgb(62, 153, 228); /* Lighter background color */
+          border-radius: 5px; /* Rounded corners */
+          padding: 10px 15px; /* Added padding for better appearance */
+      }
+
+      .menu a {
+          color: #ffffff;
+          text-decoration: none;
+          filter: drop-shadow(3px 3px 15px 4px skyblue); /* Drop shadow applied */
+          padding: 10px 15px; /* Added padding for better appearance */
+          border-radius: 5px; /* Rounded corners */
+      }
+
+      .container {
+          text-align: center;
+          margin-top: 1vh;
+      }
+
+      h1 {
+          padding: 20px;
+          color: #fff;
+          background-color: black;
+          box-shadow: 3px 3px 15px 4px skyblue;
+          margin-top: 14px;
+      }
+
+      /* Card styles */
+      .card-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+      }
+
+      .card {
+    width: 450px;
+    background-color: #060606;
+    box-shadow: 3px 3px 15px 4px skyblue;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 14px;
+    display: flex; /* Center its child elements */
+    justify-content: center; /* Center its child elements */
+}
+
+      .card1 {
+          background-color: #0d0d0d;
+          box-shadow: 3px 3px 15px 4px skyblue;
+          margin-bottom: 0px;
+          padding: 10px; /* Adjusted padding */
+          text-align: center;
+          font-size: 15px;
+      }
+
+      .card img {
+          width: 100%;
+          border-radius: 10px;
+      }
+
+      .card p {
+          color: #fff;
+          margin-top: 10px;
+      }
+
+      .apply-button {
+    background-color: #000000;
+    box-shadow: 3px 3px 15px 4px skyblue;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    margin: 0 auto; /* Center align */
+    display: block; /* Ensure block-level display */
+}
+
+.apply-button1 {
+    background-color: #000000;
+    box-shadow: 3px 3px 15px 4px skyblue;
+    color: #fff;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 196px; /* Align to the right */
+    display: inline-block; /* Ensure inline-block display */
+}
+
+      .duration {
+          font-weight: bold;
+          display: inline; /* Display in the same line */
+          margin-right: 10px; /* Add some space between duration and button */
+      }
+
+      footer {
+          background-color: #333; /* Background color for the footer */
+          color: #fff; /* Text color for the footer */
+          padding: 20px 0; /* Added padding top and bottom */
+          text-align: center; /* Center align text */
+          margin-top: 40px;
+      }
+
+  </style>
+</head>
+<body>
+<div class="section">
+    <div class="container">
+        <h1>Web Developer Internship Opportunities at Cognifyz Technologies</h1>
+    </div>
+    <nav>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="https://cognifyz.com/">Home</a></li>
+            <li><a href="https://cognifyz.com/about-us/">About</a></li>
+            <li><a href="https://cognifyz.com/services/">Services</a></li>
+            <li><a href="https://cognifyz.com/courses/">Course</a></li>
+            <li><a href="https://cognifyz.com/internships/">Internships</a></li>
+            <li><a href="https://cognifyz.com/contact-us/">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="card-container">
+      <div class="card">
+        <div class="card1">
+            <img src="https://cognifyz.com/wp-content/uploads/2022/03/hand-drawn-flat-design-api-illustration_23-2149365021.avif" alt="Image 1">
+            <h2>Full Stack Development</h2>
+            <p class="duration">Duration: <strong>1 Month</strong></p>
+            <p>Join our internship program to gain real-world experience</p>
+            
+            <p class="qualifications" style="display: none;">Internship:Gain hands-on experience in front end development with mentorship and real-world projects, spanning a duration of 1 month.
+              <br>
+              <br>
+               Benefits: Acquire real-world experience and receive mentorship from industry professionals.
+               <br>
+               <br>
+               Qualifications: Proficiency in HTML, CSS, JavaScript, and familiarity with front end frameworks like React.js or Vue.js.</p>
+            <button class="apply-button1">Read</button>
+        </div>
+        <button class="apply-button" data-link="https://docs.google.com/forms/d/e/1FAIpQLScd5TRLHUVC8kle_6k4JceWTcfknRoNsuRB6Q4ymhGrAIsnSA/viewform">Apply</button>
+    </div>
+    <div class="card">
+      <div class="card1">
+          <img src="https://cognifyz.com/wp-content/uploads/2023/12/source-code-concept-illustration_114360-5487.avif" alt="Image 1">
+          <h2>Flutter</h2>
+          <p class="duration">Duration: <strong>2 Month</strong></p>
+          <p>Join our internship program to gain real-world experience</p>
+          
+          <p class="qualifications" style="display: none;">Introduction: Our internship program offers aspiring developers the opportunity to gain real-world experience and mentorship in the field of front-end development. The program typically lasts for 1 to 2 months.
+             <br>
+             <br>
+            Highlights: Interns will benefit from hands-on experience working on live projects, receiving guidance and mentorship from seasoned professionals, and gaining insights into industry best practices.
+            <br>
+            <br>
+            Qualifications: We are seeking candidates with a strong foundation in front-end technologies such as HTML, CSS, and JavaScript, with a keen interest in learning Flutter for mobile app development.</p>
+          <button class="apply-button1">Read</button>
+      </div>
+      <button class="apply-button" data-link="https://docs.google.com/forms/d/e/1FAIpQLScd5TRLHUVC8kle_6k4JceWTcfknRoNsuRB6Q4ymhGrAIsnSA/viewform">Apply</button>
+  </div>
+  <div class="card">
+    <div class="card1">
+        <img src="https://cognifyz.com/wp-content/uploads/2023/12/visual-data-concept-illustration_114360-3940.avif" alt="Image 1">
+        <h2>Power BI</h2>
+        <p class="duration">Duration: <strong>1.5 Month</strong></p>
+        <p>Join our internship program to gain real-world experience</p>
+       
+        <p class="qualifications" style="display: none;">
+          Internship Overview:
+          Our internship program offers hands-on experience in front end development over a duration of 1.5 months.
+          <br>
+          <br>
+          Highlights:
+          Interns will gain valuable real-world experience by working on actual projects alongside experienced mentors.
+          <br>
+          <br>
+          Qualifications:
+          Desired skills include proficiency in HTML, CSS, JavaScript, and familiarity with front end frameworks like React.js. Strong communication and problem-solving abilities are also valued.</p>
+        <button class="apply-button1">Read</button>
+    </div>
+    <button class="apply-button" data-link="https://docs.google.com/forms/d/e/1FAIpQLScd5TRLHUVC8kle_6k4JceWTcfknRoNsuRB6Q4ymhGrAIsnSA/viewform">Apply</button>
+</div>
+    </div>
+    <footer>
+      <p>Face challenges as opportunities, much like Cognifyz Technologies navigates innovation. With determination and belief in your potential, every hurdle becomes a stepping stone to success.</p>
+      <p>Contact us at: <br>Email: info@cognifyztech.com <br>Phone: +1 (XXX) XXX-XXXX</p>
+    </footer>
+</div>
+<script>
+ document.querySelectorAll('.apply-button1').forEach(button => {
+      button.addEventListener('click', () => {
+          const qualifications = button.parentElement.querySelector('.qualifications');
+          if (qualifications.style.display === 'none' || qualifications.style.display === '') {
+              qualifications.style.display = 'block';
+          } else {
+              qualifications.style.display = 'none';
+          }
+      });
+  });
+
+  // JavaScript to handle click event for "Apply" buttons
+  document.querySelectorAll('.apply-button').forEach(button => {
+      button.addEventListener('click', () => {
+          const link = button.getAttribute('data-link');
+          window.location.href = link; // Redirect to the specified URL
+      });
+  });
+</script>
+</body>
+</html>
