@@ -1,6 +1,7 @@
 <!-- Build a basic calculator that adds two
 numbers together and displays the
-result using JavaScript -->
+result using JavaScript. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,33 +10,49 @@ result using JavaScript -->
     <title>Basic Calculator</title>
     <style>
         body {
+            min-height: 100vh;
             text-align: center;
-            margin-top: 3%;
+            margin-top: 9%;
+            background-image: linear-gradient(
+                to right top,
+                #4f0025,
+                #ad003d,
+                #f46ebe,
+                #600b4d,
+                #78006e
+            );
+        }
+        div{
+            border: solid rgb(105, 2, 17);
+            padding: 50px; 
+            display: inline-block; 
+            background-color: rgb(242, 124, 255);
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
         }
         input[type="number"] {
-            width: 400px;
+            width: 30vh;
+            height: 9vh;
+            margin: 20px;
             font-size: xx-large;
         }
         button {
             width: 100px; 
             height: 50px; 
-            font-size: xx-large;
+            font-size: 30px;
         }
         p#result {
             font-size: 80px;
-            text-align: center; 
         }
     </style>
 </head>
 <body>
-    <input type="number" id="number1" placeholder="Enter first number">
-    <br> 
-    <br>
-    <input type="number" id="number2" placeholder="Enter second number">
-    <br> 
-    <br>
-    <button id="add">Add</button>
-    <p id="result">Result: </p>
+    <div>
+        <input type="number" id="number1" placeholder="Enter first number">
+        <input type="number" id="number2" placeholder="Enter second number">
+        <br> 
+        <button id="add">Add</button>
+        <p id="result">Result: </p>
+    </div>
 
     <script> 
     document.getElementById('add').addEventListener('click', function() {

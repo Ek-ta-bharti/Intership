@@ -1,31 +1,44 @@
+<!-- Implement a basic responsive grid
+layout using a front-end framework
+like Bootstrap or Foundation -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Grid Layout</title>
-  <!-- Link Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
   body {
     font-family: Arial, sans-serif; 
-    background-color: #93bbea; 
+    min-height: 100vh;
+            background-image: linear-gradient(
+                to right top,
+                #11005e,
+                #2800ad,
+                #8879de,
+                #0013ba,
+                #2d71f8
+            );
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
   }
+  h3{
+    color: white;
+  }
   .container {
     text-align: center;
     font: bold ;
     border: 1px solid #070707;
     padding: 30px;
-    background-color: #2fb7d2;
+    background-color: #000470;
     box-shadow: 1px 2px 9px 7px #0686c6;
     width: 80%;
-    max-width: 700px; /* Adjust max-width as needed */
-    margin: 0 auto; /* Center the container horizontally */
+    max-width: 700px; 
+    margin: 0 auto; 
 }
 
     .row {

@@ -12,9 +12,31 @@ time using JavaScript. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Change Button Color On Click</title>
     <style>
+        body{
+            background-image: linear-gradient(
+                to right top,
+                #051937,
+                #004d7a,
+                #008793,
+                #00bf72,
+                #a8eb12
+                );
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        div{
+            text-align: center;
+            border: solid #051937;
+            background-color: #051937;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            color: beige;
+            padding: 20px;
+        }
         button {
             font-size: xxx-large;
-            margin-left: 40%;
             margin-top: 2%;
             transition: background-color 0.3s; 
         }
@@ -26,9 +48,10 @@ time using JavaScript. -->
     </style>
 </head>
 <body>
-    <p> Clicking the button will change its color, and clicking it again will revert it back to its original color. </p> 
-    <p> Clicking the button will show greeting message </p>
-    <button id="myButton">Click me</button>
+    <div>
+        <p>Clicking the button will show greeting message</p>
+        <button id="myButton">Click me</button>
+    </div>
     <script>
         const myButton = document.getElementById('myButton');
 
@@ -39,8 +62,7 @@ time using JavaScript. -->
                 myButton.style.backgroundColor = 'blue';
             }
         });
-
-    
     </script>
 </body>
 </html>
+

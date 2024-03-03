@@ -1,3 +1,15 @@
+<!-- JavaScript:
+Develop a basic button that changes
+its color when clicked using
+JavaScript.
+Create an alert box that displays a
+greeting message based on the current
+time using JavaScript.
+Build a basic calculator that adds two
+numbers together and displays the
+result using JavaScript. -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,44 +17,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            margin-top: 150px;
-            text-align: center;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Jost";
         }
-        button{
+    
+        body {
+            min-height: 100vh; 
+            background-image: linear-gradient(rgb(45, 159, 230), rgb(32, 8, 171), rgb(8, 17, 75));
+            text-align: center;
+            margin-top:  70px ; 
+        }
+    
+        .first {
+            display: inline-block; 
+            border: double rgb(199, 195, 202);
+             padding: 20px;
+             background-color: rgb(0, 82, 177);
+             margin-bottom: 70px; 
+             display: flex;
+             flex-direction: row;
+             width: 90vh;
+             align-items: center;
+             margin: 0 auto;
+             margin-bottom: 90px;   
+        }     
+    
+        #myButton,
+        #greetingButton {
+            margin: 20px;
             font-size: 30px;
-            text-align: center;
-            width: 350px;
+            width: 90vh;
             height: 100px;
-            margin-bottom: 20px; 
         }
-        button#myButton {
-            margin-l: 20px; 
+    
+        section {
+        border: double rgb(199, 195, 202);
+        text-align: center;
+        width: 40%; 
+        margin: auto; 
+        background-color: rgb(0, 82, 177);
         }
+    
         input[type="Number"] {
             width: 170px;
             margin-top: 50px;
+            margin-bottom: 20px;
             font-size: xx-large;
         }
+    
+        #add {
+            width: 8vh;
+            height: 5vh;
+        }
+    
         p#result {
             margin-top: 20px;
             font-size: 80px;
-            text-align: center; 
         }
     </style>
+    
+    
+
 </head>
 <body>
-     <button id="myButton">Click Me It's Change Color</button>
-     <button id="greetingButton">Click Me Its Send Greeting Message</button>
-     <br>
-     <br>
-     <br>
-     <input type="number" id="number1" placeholder="Enter first number">
-     <input type="number" id="number2" placeholder="Enter second number">
-     <br> 
-     <button id="add">Add</button>
-     <p id="result">Result: </p>
-
+    <div class="first">
+        <button id="myButton">Click Me It's Change Color</button>
+        <button id="greetingButton">Click Me Its Send Greeting Message</button>
+    </div>
+    <section>
+        <input type="number" id="number1" placeholder="Enter first number">
+        <input type="number" id="number2" placeholder="Enter second number">
+        <br> 
+        <button id="add">Add</button>
+        <p id="result">Result: </p>
+   
+    </section>
+    
 </body>
 
 

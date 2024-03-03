@@ -6,33 +6,57 @@ and CSS. -->
 <head>
  <title>Basic Form</title>
  <style>
-    body {
- font-family: Arial, sans-serif;
- margin-top: 200px;
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost";
 }
 
-form {
- margin: 20px 0;
- text-align: center;
+body {
+  min-height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c3639;
+  background-image: linear-gradient(rgb(45, 159, 230), rgb(32, 8, 171), rgb(8, 17, 75));
+  background-size: cover; 
+  background-repeat: no-repeat; 
 }
 
-label {
- display: inline-block;
- width: 200px;
- font-size: x-large;
- text-align: right;
-}
+   form {
+      padding: 60px;
+     text-align: center;
+     border: dotted;
+     background-image: linear-gradient(
+                    to right top ,
+                    rgba(6, 32, 71, 0.6),
+                    rgba(9, 81, 123, 0.6),
+                    rgba(9, 125, 135, 0.6),
+                    rgba(13, 175, 110, 0.6),
+                    rgba(160, 220, 31, 0.6)
+                );
+   }
 
-input[type="text"] {
- width: 400px;
- font-size: xx-large;
-}
+   label {
+     width: 150px;
+     font-size: x-large;
+     text-align: right;
+     color: beige;
+   }
 
-input[type="submit"] {
-    margin: 10px;
- margin-left: 160px;
- font-size: xx-large;
-}
+   input[type="text"] {
+     width: 300px;
+     font-size: xx-large;
+     
+   }
+
+   input[type="submit"] {
+      margin: 20px;
+     font-size: xx-large;
+     background-color: rgb(12, 12, 110);
+     color: beige;
+   }
  </style>
 </head>
 <body>

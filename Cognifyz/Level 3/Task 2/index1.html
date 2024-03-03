@@ -1,3 +1,11 @@
+<!-- Image Manipulation:
+Use CSS to create a basic image gallery
+with thumbnail images that enlarge
+when clicked.
+Implement a simple image slideshow
+that automatically transitions between
+images using HTML and CSS. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,31 +13,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cognifyz Technologies Internship</title>
     <style>
-      /* Your existing CSS styles */
       body {
           font-family: Arial, sans-serif;
           margin: 0;
           padding: 0;
-          background-color: #000000; /* Background color changed to black */
-          color: #fff; /* Text color changed to white */
+          background-color: #000000; 
+          color: #fff; 
           display: flex;
           justify-content: center;
-          align-items: flex-start; /* Align items to the top */
+          align-items: flex-start; 
           height: 100vh;
       }
 
       .section {
           width: 100%;
-          background-color: black; /* Background color for the full row */
-          box-shadow: 0px 3px 5px rgba(0,0,0,0.3); /* Shadow for the navbar */
-          padding-bottom: 30px; /* Added padding at the bottom */
+          background-color: black; 
+          box-shadow: 0px 3px 5px rgba(0,0,0,0.3); 
+          padding-bottom: 30px; 
       }
 
       nav {
           display: flex;
           justify-content: center;
           margin-top: 30px; 
-          margin-bottom: 30px;/* Increased margin-bottom for spacing */
+          margin-bottom: 30px;
       }
 
       .menu-toggle {
@@ -57,19 +64,19 @@
 
       .menu li {
           display: inline;
-          margin-right: 70px; /* Adjusted margin-right for spacing */
-          font-size: 20px; /* Reduced font-size */
-          background-color: rgb(62, 153, 228); /* Lighter background color */
-          border-radius: 5px; /* Rounded corners */
-          padding: 10px 15px; /* Added padding for better appearance */
+          margin-right: 70px; 
+          font-size: 20px; 
+          background-color: rgb(62, 153, 228); 
+          border-radius: 5px; 
+          padding: 10px 15px; 
       }
 
       .menu a {
           color: #ffffff;
           text-decoration: none;
-          filter: drop-shadow(3px 3px 15px 4px skyblue); /* Drop shadow applied */
-          padding: 10px 15px; /* Added padding for better appearance */
-          border-radius: 5px; /* Rounded corners */
+          filter: drop-shadow(3px 3px 15px 4px skyblue); 
+          padding: 10px 15px; 
+          border-radius: 5px; 
       }
 
       .container {
@@ -85,7 +92,6 @@
           margin-top: 14px;
       }
 
-      /* Card styles */
       .card-container {
           display: flex;
           justify-content: center;
@@ -100,15 +106,15 @@
     border-radius: 10px;
     margin: 20px;
     padding: 14px;
-    display: flex; /* Center its child elements */
-    justify-content: center; /* Center its child elements */
+    display: flex; 
+    justify-content: center; 
 }
 
       .card1 {
           background-color: #0d0d0d;
           box-shadow: 3px 3px 15px 4px skyblue;
           margin-bottom: 0px;
-          padding: 10px; /* Adjusted padding */
+          padding: 10px; 
           text-align: center;
           font-size: 15px;
       }
@@ -134,8 +140,8 @@
     margin-top: 10px;
     transition: background-color 0.3s ease;
     margin-top: 20px;
-    margin: 0 auto; /* Center align */
-    display: block; /* Ensure block-level display */
+    margin: 0 auto; 
+    display: block; 
 }
 
 .apply-button1 {
@@ -147,21 +153,21 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-left: 196px; /* Align to the right */
-    display: inline-block; /* Ensure inline-block display */
+    margin-left: 196px; 
+    display: inline-block; 
 }
 
       .duration {
           font-weight: bold;
-          display: inline; /* Display in the same line */
-          margin-right: 10px; /* Add some space between duration and button */
+          display: inline; 
+          margin-right: 10px; 
       }
 
       footer {
-          background-color: #333; /* Background color for the footer */
-          color: #fff; /* Text color for the footer */
-          padding: 20px 0; /* Added padding top and bottom */
-          text-align: center; /* Center align text */
+          background-color: #333; 
+          color: #fff; 
+          padding: 20px 0;
+          text-align: center; 
           margin-top: 40px;
       }
 
@@ -268,7 +274,7 @@
   document.querySelectorAll('.apply-button').forEach(button => {
       button.addEventListener('click', () => {
           const link = button.getAttribute('data-link');
-          window.location.href = link; // Redirect to the specified URL
+          window.location.href = link; 
       });
   });
 </script>
